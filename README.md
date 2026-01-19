@@ -78,3 +78,48 @@ rongyok-mobile/
 ## Version
 
 1.6.0 - Initial mobile release
+
+---
+
+## CI/CD (GitHub Actions)
+
+The project uses GitHub Actions to automatically build Android APKs on release tags.
+
+### Setup EAS Token
+
+1. Login to EAS:
+```bash
+eas login
+```
+
+2. Get your EXPO_TOKEN:
+```bash
+eas whoami
+```
+
+3. Add EXPO_TOKEN to GitHub Secrets:
+   - Go to: https://github.com/TheerasakPing/rongyok-video-downloader-mobile/settings/secrets/actions
+   - Click "New repository secret"
+   - Name: `EXPO_TOKEN`
+   - Value: Your token from step 2
+
+### Trigger Build
+
+Push a new tag to trigger the CI/CD:
+
+```bash
+git tag v1.6.1
+git push origin v1.6.1
+```
+
+This will:
+1. Build Android APK via EAS
+2. Upload APK to GitHub Actions artifacts
+3. Create GitHub release with APK attached
+
+### Manual Build
+
+You can also trigger a build manually from GitHub:
+1. Go to: https://github.com/TheerasakPing/rongyok-video-downloader-mobile/actions
+2. Click "Build Android APK" workflow
+3. Click "Run workflow" → "Run workflow"
