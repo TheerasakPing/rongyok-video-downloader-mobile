@@ -43,9 +43,11 @@
       "appVersionSource": "local"
     },
     "extra": {
+      "router": {},
       "eas": {
-        "projectId": "b7c52588-8827-4789-a2b0-7973a5e8e9d1"
+        "projectId": "95a7fe8c-7406-49df-b92c-c7b405b841f8"
       }
-    }
+    },
+    "owner": "theerasak.shadow"
   }
 }
