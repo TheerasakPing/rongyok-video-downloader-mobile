@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
-    "scheme": "rongyok",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -24,18 +23,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.rongyok.videodownloader",
-      "permissions": [
-        "INTERNET",
-        "WRITE_EXTERNAL_STORAGE",
-        "READ_EXTERNAL_STORAGE",
-        "DOWNLOAD_WITHOUT_NOTIFICATION"
-      ]
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/favicon.png"
+      "package": "com.rongyok.videodownloader"
     },
     "plugins": [
       "expo-router",
@@ -51,16 +39,13 @@
     "experiments": {
       "typedRoutes": true
     },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "your-project-id-here"
-      }
+    "cli": {
+      "appVersionSource": "local"
     },
-    "updates": {
-      "url": "https://u.expo.dev/your-project-id-here"
+    "extra": {
+      "eas": {
+        "projectId": "b7c52588-8827-4789-a2b0-7973a5e8e9d1"
+      }
     }
   }
 }

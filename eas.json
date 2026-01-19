@@ -8,21 +8,12 @@
       "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      }
+      "distribution": "internal"
     },
     "production": {
       "android": {
         "buildType": "apk"
-      },
-      "ios": {
-        "buildConfiguration": "generic xcodebuild"
       }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
