@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.rongyok.videodownloader"
@@ -39,9 +37,7 @@
     "experiments": {
       "typedRoutes": true
     },
-    "cli": {
-      "appVersionSource": "local"
-    },
+
     "extra": {
       "router": {},
       "eas": {
